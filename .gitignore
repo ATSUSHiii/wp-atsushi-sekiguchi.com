@@ -1,0 +1,10 @@
+themes/node_modules
+themes/.sass-cache
+themes/atsushi-sekiguchi/**/*.min.css
+themes/atsushi-sekiguchi/**/*.min.js
+themes/atsushi-sekiguchi/img/
+languages
+plugins
+upgrade
+uploads
+index.php

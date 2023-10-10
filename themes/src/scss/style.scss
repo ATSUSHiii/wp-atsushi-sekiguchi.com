@@ -1,0 +1,42 @@
+@charset 'utf-8';
+
+// ========================================
+// library
+// ========================================
+// @import '../../node_modules/bootstrap/scss/bootstrap.scss';
+// @import './lib/magnific-popup';
+
+// ========================================
+// core files
+// ========================================
+@import 'foundation/core/reset';
+@import 'foundation/core/variable';
+@import 'foundation/core/mixins';
+@import 'foundation/core/base';
+
+// ========================================
+// sprite
+// ========================================
+// @import 'foundation/sprite/module-sprite';
+
+// ========================================
+// modules
+// ========================================
+// @import 'foundation/module/*.*';
+
+// ========================================
+// layouts
+// ========================================
+@import 'layout/*.*';
+
+// ========================================
+// object
+// ========================================
+@import 'object/component/*.*';
+@import 'object/project/*.*';
+@import 'object/utility/*.*';
+
+// ========================================
+// other
+// ========================================
+

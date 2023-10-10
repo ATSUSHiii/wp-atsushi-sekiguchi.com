@@ -1,0 +1,48 @@
+@charset 'utf-8';
+
+.c-tab {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	margin: 0 get_vw(-5);
+
+	&__col {
+		display: block;
+		width: 50%;
+		padding: 0 get_vw(5);
+		margin: get_vw(10) 0 0;
+	}
+
+	&__button {
+		display: block;
+		text-align: center;
+		width: 100%;
+		border: solid 1px $colorLightBlack;
+		background-color: $colorLightBlack;
+		color: $colorWhite;
+		font-size: get_vw(24);
+		padding: get_vw(20);
+		transition: $transition;
+
+		&:hover,
+		&.is-current {
+			background-color: $colorWhite;
+			color: $colorLightBlack;
+		}
+	}
+
+	@media screen and (min-width: $mediaTB) {
+		margin: 0 -8px;
+
+		&__col {
+			width: 25%;
+			padding: 0 8px;
+			margin: 10px 0 0;
+		}
+
+		&__button {
+			font-size: 16px;
+			padding: 20px;
+		}
+	}
+}

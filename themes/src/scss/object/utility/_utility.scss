@@ -1,0 +1,55 @@
+@charset 'utf-8';
+
+.u-sp {
+
+	@media screen and (min-width: $mediaTB) {
+		display: none;
+	}
+}
+
+.u-pc {
+	display: none;
+
+	@media screen and (min-width: $mediaTB) {
+		display: inherit;
+	}
+}
+
+.u-mg {
+	&-center {
+		margin: 0 auto;
+	}
+}
+
+.u-fadeUp {
+	transition: $transition;
+	animation-name: none;
+	opacity: 0;
+
+	&.is-fade,
+	&.is-fade-always {
+		animation-name: fadeUpAnime;
+		animation-duration: 1s;
+		animation-fill-mode: forwards;
+		transition-delay: .3;
+		transition: $transition;
+	}
+
+	@keyframes fadeUpAnime {
+		0% {
+			opacity: 0;
+			transform: translateY(50px);
+		}
+
+		100% {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+}
+
+// // mixitup用
+// .js-sort-item .mix {
+// 	// opacity: 0;
+// 	display: none;
+// }

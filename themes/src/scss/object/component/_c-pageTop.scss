@@ -1,0 +1,41 @@
+@charset 'utf-8';
+
+.c-pageTop {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	transition-duration: .5s;
+
+	&__btn {
+		display: block;
+		position: relative;
+		width: get_vw(100);
+		height: get_vw(100);
+		border-radius: 100%;
+		margin: 0 get_vw(20) 0 auto;
+		background-color: $colorLightBlack;
+
+		i {
+			font-size: get_vw(60);
+			color: $colorWhite;
+			position: absolute;
+			top: get_vw(18);
+			left: get_vw(25);
+		}
+	}
+
+	@media screen and (min-width: $mediaSP) {
+
+		&__btn {
+			width: 60px;
+			height: 60px;
+			margin: 0 20px 0 auto;
+
+			i {
+				font-size: 32px;
+				top: 12px;
+				left: 17px;
+			}
+		}
+	}
+}

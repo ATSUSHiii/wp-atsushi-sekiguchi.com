@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+/*====================================*/
+// 関数
+/*====================================*/
+
+// font-family
+
+$notoSans: 'Noto Sans', sans-serif;
+$openSans: 'Open Sans', sans-serif;
+$robot: 'Roboto', sans-serif;
+
+// color
+$colorWhite: #fff;
+$colorVeryLightGray: #eee;
+$colorLightGray: #ccc;
+$colorGray: #999;
+$colorDarkGray: #666;
+$colorLightBlack: #333;
+$colorBlack: #000;
+
+// column width
+$maxWidthTB: 980px;
+$maxWidthPC: 1280px;
+$maxWidthWidePC: 1600px;
+
+// ブレイクポイント
+$mediaSP: 576px;
+$mediaTB: 768px;
+$mediaPC: 991px;
+
+// 単位 vw でのサイズ計算
+@function get_vw($size, $viewport: 750) {
+    $rate: 100 / $viewport;
+
+    @if 0 <=$rate * $size and $rate * $size <=0.5 {
+        @return 1px;
+    }
+
+    @else if 0>$rate * $size and $rate * $size>=-0.5 {
+        @return -1px;
+    }
+
+    @else {
+        @return $rate * $size * 1vw;
+    }
+}
+
+// トランジション長さ
+$transition: all .3s;
+$transitionsSlow: all .6s;
+
+// トランスレート-50%
+$transformX: translateX(-50%);
+$transformY: translateY(-50%);
+$transformYX: translate(-50%, -50%);
+
+// 拡大率
+$transform: scale(1.3);
+
+// 透過率
+$opacity: .8;

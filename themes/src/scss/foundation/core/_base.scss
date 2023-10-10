@@ -1,0 +1,380 @@
+@charset "utf-8";
+
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: $robot;
+	color: $colorLightBlack;
+	// min-height: 100vh;
+}
+
+a {
+	transition: $transition;
+}
+
+a:hover {
+	color: inherit;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+// article {
+
+h1 {
+	font-size: get_vw(48);
+	line-height: 1.6;
+}
+
+h2 {
+	font-size: get_vw(40);
+	line-height: 1.6;
+}
+
+h3 {
+	font-size: get_vw(36);
+	line-height: 1.6;
+}
+
+h4 {
+	font-size: get_vw(32);
+	line-height: 1.6;
+}
+
+h5 {
+	font-size: get_vw(30);
+	line-height: 1.6;
+}
+
+h6 {
+	font-size: get_vw(28);
+	line-height: 1.6;
+}
+
+p,
+li,
+td,
+th,
+dt,
+dd {
+	font-size: get_vw(28);
+	line-height: 1.6;
+}
+
+figcaption,
+cite {
+	font-size: get_vw(28);
+	line-height: 1.4;
+	margin: get_vw(8) 0 0;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: get_vw(40) 0 0;
+}
+
+p,
+ul,
+ol,
+dl,
+table,
+blockquote,
+figure,
+.wp-block-image {
+	margin: get_vw(24) 0 0;
+}
+
+dt {
+	margin: get_vw(10) 0 0;
+}
+
+dd {
+	margin: get_vw(4) 0 0;
+}
+
+th,
+td {
+	border: 1px solid $colorLightBlack;
+	padding: get_vw(10);
+}
+
+th {
+	background: $colorVeryLightGray;
+}
+
+
+ul,
+ol {
+	margin: 0 0 0 get_vw(24);
+}
+
+ul li {
+	// list-style-type: disc;
+
+	// text-indent: -1em;
+	// &:before {
+	// 	content: '・';
+	// 	border-radius: 100px;
+	// 	background: $colorDarkGray;
+	// 	font-size: 6px;
+	// 	margin-right: 12px;
+	// }
+}
+
+ol {
+	counter-reset: item;
+}
+
+ol li {
+	list-style-type: decimal;
+
+	// text-indent: -2em;
+	// &:before {
+	// 	display: inline-block;
+	// 	content: counter(item)".";
+	// 	counter-increment: item;
+	// 	font-weight: bold;
+	// 	color: $colorDarkGray;
+	// 	text-align: right;
+	// 	width: 32px;
+	// 	margin-right: 10px;
+	// }
+}
+
+.wp-block-quote {
+	background: $colorVeryLightGray;
+	border-left: get_vw(4) solid $colorLightBlack;
+	padding: get_vw(12);
+
+	p {
+		margin-top: 0;
+	}
+
+}
+
+.wp-block-pullquote {
+	text-align: center;
+	background: $colorVeryLightGray;
+
+	border: {
+		top: get_vw(4) solid $colorLightBlack;
+		bottom: get_vw(4) solid $colorLightBlack;
+	}
+
+	padding: get_vw(12);
+
+	p,
+	blockquote {
+		margin: 0;
+	}
+}
+
+
+@media screen and (min-width: $mediaSP) {
+
+	// article {
+	h1 {
+		font-size: get_vw(32);
+	}
+
+	h2 {
+		font-size: get_vw(28);
+	}
+
+	h3 {
+		font-size: get_vw(24);
+	}
+
+	h4 {
+		font-size: get_vw(22);
+	}
+
+	h5 {
+		font-size: get_vw(20);
+	}
+
+	h6 {
+		font-size: get_vw(18);
+	}
+
+	p,
+	li,
+	td,
+	th,
+	dt,
+	dd {
+		font-size: get_vw(16);
+	}
+
+	figcaption,
+	cite {
+		font-size: get_vw(14);
+		margin: get_vw(8) 0 0;
+	}
+
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin: get_vw(40) 0 0;
+	}
+
+	p,
+	ul,
+	ol,
+	dl,
+	table,
+	blockquote,
+	figure,
+	.wp-block-image {
+		margin: get_vw(24) 0 0;
+	}
+
+	dt {
+		margin: get_vw(10) 0 0;
+	}
+
+	dd {
+		margin: get_vw(4) 0 0;
+	}
+
+	th,
+	td {
+		border: 1px solid $colorLightBlack;
+		padding: get_vw(10);
+	}
+
+	ul,
+	ol {
+		margin: 0 0 0 get_vw(24);
+	}
+
+	// }
+
+	.wp-block-quote {
+		border-left: 4px solid $colorLightBlack;
+		padding: get_vw(12);
+	}
+
+	.wp-block-pullquote {
+		border: {
+			top: 4px solid $colorLightBlack;
+			bottom: 4px solid $colorLightBlack;
+		}
+
+		padding: get_vw(12);
+	}
+
+}
+
+@media screen and (min-width: $mediaTB) {
+
+	// article {
+	h1 {
+		font-size: 32px;
+	}
+
+	h2 {
+		font-size: 28px;
+	}
+
+	h3 {
+		font-size: 24px;
+	}
+
+	h4 {
+		font-size: 22px;
+	}
+
+	h5 {
+		font-size: 20px;
+	}
+
+	h6 {
+		font-size: 18px;
+	}
+
+	p,
+	li,
+	td,
+	th,
+	dt,
+	dd {
+		font-size: 16px;
+	}
+
+	figcaption,
+	cite {
+		font-size: 14px;
+		margin: 8px 0 0;
+	}
+
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin: 32px 0 0;
+	}
+
+	p,
+	ul,
+	ol,
+	dl,
+	table,
+	blockquote,
+	figure,
+	.wp-block-image {
+		margin: 16px 0 0;
+	}
+
+	dt {
+		margin: 10px 0 0;
+	}
+
+	dd {
+		margin: 4px 0 0;
+	}
+
+	th,
+	td {
+		border: 1px solid $colorLightBlack;
+		padding: 10px;
+	}
+
+	ul,
+	ol {
+		margin: 0 0 0 24px;
+	}
+
+	// }
+
+	.wp-block-quote {
+		border-left: 4px solid $colorLightBlack;
+		padding: 12px;
+	}
+
+	.wp-block-pullquote {
+		border: {
+			top: 4px solid $colorLightBlack;
+			bottom: 4px solid $colorLightBlack;
+		}
+
+		padding: 12px;
+	}
+
+}

@@ -1,0 +1,117 @@
+@charset 'utf-8';
+
+.p-form {
+	width: 100%;
+	margin: get_vw(40) auto 0;
+	padding: get_vw(20);
+
+	#wpcf7cpcnf th,
+	#wpcf7cpcnf td {
+		display: block;
+		border: none;
+	}
+
+	#wpcf7cpcnf p {
+		margin: 0;
+	}
+
+	#wpcf7cpcnf th {
+		background: $colorWhite;
+	}
+
+	&__inner,
+	#wpcf7cpcnf table {
+		width: 100%;
+		padding: get_vw(20);
+	}
+
+	&__label,
+	&__submit,
+	&__text,
+	&__textarea {
+		display: block;
+	}
+
+	&__label,
+	#wpcf7cpcnf tr {
+		margin: get_vw(30) 0 0;
+	}
+
+	&__submit {
+		margin: get_vw(60) 0 0;
+	}
+
+	&__name {
+		font-weight: bold;
+	}
+
+	&__text,
+	&__textarea {
+		border: solid 1px $colorLightGray;
+		border-radius: 8px;
+		width: 100%;
+		padding: get_vw(16);
+		margin: get_vw(12) 0 0;
+	}
+
+	.wpcf7cp-btns button {
+		display: block;
+		text-align: center;
+		font-size: get_vw(32);
+		background: $colorLightBlack;
+		border: solid 2px $colorLightBlack;
+		border-radius: 100px;
+		color: $colorWhite;
+		width: 100%;
+		margin: 0 auto;
+		padding: get_vw(40) get_vw(20);
+		margin: get_vw(32) auto 0;
+		transition: $transition;
+
+		&:hover {
+			background: $colorWhite;
+			color: $colorLightBlack;
+			opacity: 1;
+		}
+	}
+
+	@media screen and (min-width: $mediaSP) {
+		margin: get_vw(40) auto 0;
+		padding: get_vw(10);
+	}
+
+	@media screen and (min-width: $mediaTB) {
+		max-width: $maxWidthTB;
+		margin: 40px auto 0;
+		padding: 20px;
+
+		&__inner {
+			max-width: $maxWidthTB;
+			padding: 20px;
+			margin: 0 auto;
+		}
+
+		&__label,
+		#wpcf7cpcnf tr {
+			margin: 20px 0 0;
+		}
+
+		&__submit,
+		#wpcf7cp-btns {
+			margin: 60px 0 0;
+		}
+
+		&__text,
+		&__textarea {
+			padding: 8px;
+			margin: 8px 0 0;
+		}
+
+		.wpcf7cp-btns button {
+			font-size: 20px;
+			max-width: 400px;
+			padding: 20px;
+			margin: 32px auto 0;
+		}
+	}
+}

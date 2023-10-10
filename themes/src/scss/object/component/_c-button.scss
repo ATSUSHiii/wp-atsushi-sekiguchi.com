@@ -1,0 +1,28 @@
+@charset 'utf-8';
+
+.c-button {
+	display: block;
+	text-align: center;
+	font-size: get_vw(32);
+	background: $colorLightBlack;
+	border: solid 2px $colorLightBlack;
+	border-radius: 100px;
+	color: $colorWhite;
+	width: 100%;
+	max-width: get_vw(400);
+	margin: 0 auto;
+	padding: get_vw(30) get_vw(20);
+	transition: $transition;
+
+	&:hover {
+		background: $colorWhite;
+		color: $colorLightBlack;
+		opacity: 1;
+	}
+
+	@media screen and (min-width: $mediaSP) {
+		font-size: 20px;
+		max-width: 400px;
+		padding: 20px;
+	}
+}

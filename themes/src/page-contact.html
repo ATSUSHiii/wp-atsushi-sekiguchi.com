@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+
+  <title>ATSUSHI-SEKIGUCHI</title>
+  <meta name="description" content="WEBクリエイターせきぐちあつしのポートフォリオサイト" />
+
+  <!-- OGPタグ/twitterカード -->
+  <meta property="og:url" content="ページのURL" />
+  <meta property="og:title" content="ATSUSHI-SEKIGUCHI" />
+  <meta property="og:type" content="ページのタイプ">
+  <meta property="og:description" content="記事の抜粋" />
+  <meta property="og:image" content="画像のURL" />
+  <meta name="twitter:card" content="カード種類" />
+  <meta name="twitter:site" content="@Twitterユーザー名" />
+  <meta property="og:site_name" content="サイト名" />
+  <meta property="og:locale" content="ja_JP" />
+  <meta property="fb:app_id" content="appIDを入力" />
+
+  <!-- URLの正規化（link rel=”canonical”） -->
+  <link rel="canonical" href="正規化するURL" />
+  <!-- サイトアイコンの指定 -->
+  <link rel="icon" href="画像URL" sizes="16x16" type="image/png" />
+  <!-- スマホ用アイコン画像 -->
+  <link rel="apple-touch-icon-precomposed" href="画像のURL" />
+  <!-- Windows用タイル設定 -->
+  <meta name="msapplication-TileImage" content="画像のURL" />
+  <meta name="msapplication-TileColor" content="カラーコード（例：#F89174）" />
+  <!-- 電話番号やメールアドレスの変換設定 -->
+  <meta name="format-detection" content="email=no,telephone=no,address=no" />
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+  <!-- fontawesome -->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- CSS読み込み -->
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="l-header">
+    <div class="l-header__inner">
+      <h1 class="l-header__title">
+        <a href="/">ATSUSHI<br>SEKIGUCHI</a>
+      </h1>
+      <div class="l-header__item">
+        <div class="c-globalNav">
+          <div class="c-globalNav__hamburger js-hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="c-globalNav__inner js-globalNav">
+            <nav class="c-globalNav__menu">
+              <ul class="c-globalNav__menuList">
+                <li class="c-globalNav__menuItem"><a href="/">ABOUT</a></li>
+                <li class="c-globalNav__menuItem"><a href="/">WORKS</a></li>
+                <li class="c-globalNav__menuItem"><a href="https://atsushi-photographer.com/" target="_blank" rel="noopener noreferrer">PHOTO</a></li>
+                <li class="c-globalNav__menuItem"><a href="/">CONTACT</a></li>
+              </ul>
+            </nav>
+            <ul class="c-globalNav__sns">
+              <li class="c-globalNav__snsList">
+                <a href="https://www.instagram.com/atsushi_photographer/" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li class="c-globalNav__snsList">
+                <a href="https://twitter.com/ATSUSHI__WEB/" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="l-main">
+    <div class="l-main__inner">
+
+      <section class="p-form">
+        <h1 class="c-heading">CONTACT</h1>
+        <form class="p-form__inner">
+          <label class="p-form__label">
+            <span class="p-form__name">氏名</span>
+            <input class="p-form__text" type="text">
+          </label>
+          <label class="p-form__label">
+            <span class="p-form__name">アドレス</span>
+            <input class="p-form__text" type="email">
+          </label>
+          <label class="p-form__label">
+            <span class="p-form__name">電話番号</span>
+            <input class="p-form__text" type="tel">
+          </label>
+          <label class="p-form__label">
+            <span class="p-form__name">お問合せ内容</span>
+            <textarea class="p-form__textarea" rows="4"></textarea>
+          </label>
+          <div class="p-form__submit">
+            <input class="c-button" type="submit" value="送信">
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <div class="c-pageTop">
+    <div class="c-pageTop__inner">
+      <a class="c-pageTop__btn js-pageTop" href="#">
+        <i class="fas fa-chevron-up"></i>
+      </a>
+    </div>
+  </div>
+
+  <footer class="l-footer js-fixedTarget">
+    <div class="l-footer__inner">
+      <p class="l-footer__copy"><a href="/">©︎ATSUSHI-SEKIGUCHI</a></p>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/common/app.min.js"></script>
+</body>
+
+</html>

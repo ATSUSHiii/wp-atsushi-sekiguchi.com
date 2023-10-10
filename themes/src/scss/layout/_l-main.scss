@@ -1,0 +1,23 @@
+@charset 'utf-8';
+
+.l-main {
+  width: 100%;
+
+  &__inner {
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: $mediaTB) {
+    &__inner {
+      // max-width: $maxWidthTB;
+      max-width: $maxWidthPC;
+    }
+  }
+
+  @media screen and (min-width: $mediaPC) {
+    &__inner {
+      // max-width: $maxWidthPC;
+      max-width: $maxWidthWidePC;
+    }
+  }
+}
