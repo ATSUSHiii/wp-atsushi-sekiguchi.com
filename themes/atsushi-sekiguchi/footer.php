@@ -27,107 +27,177 @@
     const galleryData = {
       categories: [{
           name: 'スナップ',
-          thumbnail: '/wp-content/uploads/2022/06/IMG_9048-scaled.jpg',
+          thumbnail: '<?php echo get_template_directory_uri(); ?>/img/photo/photo_0001.png',
           images: [{
-              src: '/wp-content/uploads/2023/04/20110405-IMG_9457-scaled.jpg',
+              src: '<?php echo get_template_directory_uri(); ?>/img/photo/photo_0001.png',
               alt: 'スナップ'
             },
             {
-              src: '/wp-content/uploads/2023/04/20110711-IMG_0095-scaled.jpg',
+              src: '<?php echo get_template_directory_uri(); ?>/img/photo/photo_0002.png',
               alt: 'スナップ'
             },
             {
-              src: '/wp-content/uploads/2023/04/20110906-IMG_0606-scaled.jpg',
+              src: '<?php echo get_template_directory_uri(); ?>/img/photo/photo_0003.png',
               alt: 'スナップ'
             },
             {
-              src: '/wp-content/uploads/2023/04/20120822-_MG_7882-scaled.jpg',
+              src: '<?php echo get_template_directory_uri(); ?>/img/photo/photo_0004.png',
               alt: 'スナップ'
             },
             {
-              src: '/wp-content/uploads/2023/04/20121024-_MG_8870-バージョン-2-scaled.jpg',
+              src: '<?php echo get_template_directory_uri(); ?>/img/photo/photo_0005.png',
               alt: 'スナップ'
             },
             {
-              src: '/wp-content/uploads/2023/04/20130216-IMG_0884-バージョン-2-scaled.jpg',
+              src: '<?php echo get_template_directory_uri(); ?>/img/photo/photo_0006.png',
               alt: 'スナップ'
             },
             {
-              src: '/wp-content/uploads/2023/04/20130216-IMG_0914-バージョン-2-Conflicted-copy-from-関口敦-の-MacBook-on-2016-08-07-scaled.jpg',
+              src: '<?php echo get_template_directory_uri(); ?>/img/photo/photo_0007.png',
               alt: 'スナップ'
             },
             {
-              src: '/wp-content/uploads/2023/04/20130415-IMG_2170-scaled.jpg',
+              src: '<?php echo get_template_directory_uri(); ?>/img/photo/photo_0008.png',
               alt: 'スナップ'
             },
             {
-              src: '/wp-content/uploads/2023/04/20140725-IMG_1116-scaled.jpg',
+              src: '<?php echo get_template_directory_uri(); ?>/img/photo/photo_0009.png',
               alt: 'スナップ'
             },
             {
-              src: '/wp-content/uploads/2023/04/20140725-IMG_1132-scaled.jpg',
+              src: '<?php echo get_template_directory_uri(); ?>/img/photo/photo_0010.png',
               alt: 'スナップ'
             },
             {
-              src: '/wp-content/uploads/2023/04/20140805-IMG_1353-バージョン-2-Conflicted-copy-from-関口敦-の-MacBook-on-2016-08-07-scaled.jpg',
+              src: '<?php echo get_template_directory_uri(); ?>/img/photo/photo_0011.png',
+              alt: 'スナップ'
+            },
+            {
+              src: '<?php echo get_template_directory_uri(); ?>/img/photo/photo_0012.png',
               alt: 'スナップ'
             },
           ]
         },
         {
-          name: 'ファミリー',
-          thumbnail: '/wp-content/uploads/2023/04/20171129-IMG_7615-scaled.jpg',
+          name: 'イベント',
+          thumbnail: '<?php echo get_template_directory_uri(); ?>/img/photo/photo_0013_01.png',
           images: [{
-              src: '/wp-content/uploads/2023/04/20171129-IMG_7615-scaled.jpg',
+              src: '<?php echo get_template_directory_uri(); ?>/img/photo/photo_0013_01.png',
+              alt: 'イベント'
+            },
+            {
+              src: '<?php echo get_template_directory_uri(); ?>/img/photo/photo_0013_02.png',
+              alt: 'イベント'
+            },
+            {
+              src: '<?php echo get_template_directory_uri(); ?>/img/photo/photo_0013_03.png',
+              alt: 'イベント'
+            },
+            {
+              src: '<?php echo get_template_directory_uri(); ?>/img/photo/photo_0013_04.png',
+              alt: 'イベント'
+            },
+            {
+              src: '<?php echo get_template_directory_uri(); ?>/img/photo/photo_0013_05.png',
+              alt: 'イベント'
+            },
+            {
+              src: '<?php echo get_template_directory_uri(); ?>/img/photo/photo_0013_06.png',
+              alt: 'イベント'
+            },
+            {
+              src: '<?php echo get_template_directory_uri(); ?>/img/photo/photo_0013_07.png',
+              alt: 'イベント'
+            },
+          ]
+        },
+        {
+          name: 'ファミリー',
+          thumbnail: '<?php echo get_template_directory_uri(); ?>/img/photo/photo_0014_01.jpg',
+          images: [{
+              src: '<?php echo get_template_directory_uri(); ?>/img/photo/photo_0014_01.jpg',
               alt: 'ファミリー'
             },
             {
-              src: '/wp-content/uploads/2023/04/20171129-IMG_7842-scaled.jpg',
+              src: '<?php echo get_template_directory_uri(); ?>/img/photo/photo_0014_02.jpg',
               alt: 'ファミリー'
             },
             {
-              src: '/wp-content/uploads/2023/04/20171129-IMG_7968-scaled.jpg',
+              src: '<?php echo get_template_directory_uri(); ?>/img/photo/photo_0014_03.jpg',
               alt: 'ファミリー'
             },
             {
-              src: '/wp-content/uploads/2023/04/20181113-128-scaled.jpg',
+              src: '<?php echo get_template_directory_uri(); ?>/img/photo/photo_0014_04.jpg',
               alt: 'ファミリー'
             },
             {
-              src: '/wp-content/uploads/2023/04/20181113-054-scaled.jpg',
+              src: '<?php echo get_template_directory_uri(); ?>/img/photo/photo_0014_05.jpg',
               alt: 'ファミリー'
             },
             {
-              src: '/wp-content/uploads/2023/04/20191020-077-scaled.jpg',
+              src: '<?php echo get_template_directory_uri(); ?>/img/photo/photo_0014_06.jpg',
               alt: 'ファミリー'
             },
             {
-              src: '/wp-content/uploads/2023/04/20191020-100-scaled.jpg',
+              src: '<?php echo get_template_directory_uri(); ?>/img/photo/photo_0014_07.jpg',
+              alt: 'ファミリー'
+            },
+          ]
+        },
+        {
+          name: '七五三',
+          thumbnail: '<?php echo get_template_directory_uri(); ?>/img/photo/photo_0015_01.jpg',
+          images: [{
+              src: '<?php echo get_template_directory_uri(); ?>/img/photo/photo_0015_01.jpg',
+              alt: 'ファミリー'
+            },
+            {
+              src: '<?php echo get_template_directory_uri(); ?>/img/photo/photo_0015_02.jpg',
+              alt: 'ファミリー'
+            },
+            {
+              src: '<?php echo get_template_directory_uri(); ?>/img/photo/photo_0015_03.jpg',
+              alt: 'ファミリー'
+            },
+            {
+              src: '<?php echo get_template_directory_uri(); ?>/img/photo/photo_0015_04.jpg',
+              alt: 'ファミリー'
+            },
+            {
+              src: '<?php echo get_template_directory_uri(); ?>/img/photo/photo_0015_05.jpg',
+              alt: 'ファミリー'
+            },
+            {
+              src: '<?php echo get_template_directory_uri(); ?>/img/photo/photo_0015_06.jpg',
+              alt: 'ファミリー'
+            },
+            {
+              src: '<?php echo get_template_directory_uri(); ?>/img/photo/photo_0015_07.jpg',
               alt: 'ファミリー'
             },
           ]
         },
         {
           name: 'モデル',
-          thumbnail: '/wp-content/uploads/2023/04/20220207-2H4A8786-scaled.jpg',
+          thumbnail: '<?php echo get_template_directory_uri(); ?>/img/photo/photo_0016_01.jpg',
           images: [{
-              src: '/wp-content/uploads/2023/04/20220207-2H4A8786-scaled.jpg',
+              src: '<?php echo get_template_directory_uri(); ?>/img/photo/photo_0016_01.jpg',
               alt: 'モデル'
             },
             {
-              src: '/wp-content/uploads/2023/04/20220207-2H4A8621-scaled.jpg',
+              src: '<?php echo get_template_directory_uri(); ?>/img/photo/photo_0016_02.jpg',
               alt: 'モデル'
             },
             {
-              src: '/wp-content/uploads/2023/04/20220207-2H4A9252-scaled.jpg',
+              src: '<?php echo get_template_directory_uri(); ?>/img/photo/photo_0016_03.jpg',
               alt: 'モデル'
             },
             {
-              src: '/wp-content/uploads/2023/04/20220207-2H4A9398-scaled.jpg',
+              src: '<?php echo get_template_directory_uri(); ?>/img/photo/photo_0016_04.jpg',
               alt: 'モデル'
             },
             {
-              src: '/wp-content/uploads/2023/04/20220207-2H4A9630-scaled.jpg',
+              src: '<?php echo get_template_directory_uri(); ?>/img/photo/photo_0016_05.jpg',
               alt: 'モデル'
             },
           ]
